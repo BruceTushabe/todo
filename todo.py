@@ -1,22 +1,29 @@
-class todo:
-    def __init__(self,name,created_at ):
-        
-        self.name = name 
-        self.created_at = created_at
-        self.list()
-        
+class Todo():
+    def __init__(self):
+        self.todo_list = []
+        """ Delcaring an empty list in this case."""
 
-    def add_task (self, name):
-        self.append = list
         
-    def show_tasks(self, task):
-        return 
+    def add_task (self, name, created_at):
 
-    def delete_task(self, delete_task):
-        self.delete_task = delete_task
-    
-class HomeTodo:
-    def_
+        task = {
+            'id': len(self.tod_list) + 1,
+            'name': name,
+            'created_at': created_at
+        }
+
+        self.todo_list.append(task)
+        return self.todo_list
+
+    def show_tasks(self):
+        return self.todo_list
+
+    def delete_task(self, name):
+        self.todo_list.pop()
+        return self.todo_list
+
+
+   
 
 
     
